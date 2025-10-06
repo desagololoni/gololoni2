@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenitas & Fasilitas - Desa Wisata Golo Loni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="img/LogoGL.png" alt="Logo Golo Loni" ondblclick="location.reload();">
+                </div>
+                <!-- Hamburger Button -->
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+                <!-- Main Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Beranda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="home.html#about" class="nav-link">
+                            Profil Desa
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li class="dropdown-item">
+                                <a href="about.html#abouttext" class="dropdown-link" role="menuitem">Tentang Desa</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="about.html#maps" class="dropdown-link" role="menuitem">Peta</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="about.html#galeriAbout" class="dropdown-link" role="menuitem">Galeri</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="home.html#attraction" class="nav-link">
+                            Atraksi
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li class="dropdown-item">
+                                <a href="attraction.html" class="dropdown-link" role="menuitem">Detail Lengkap</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="home.html#packages" class="nav-link">
+                            Paket Wisata
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="amenitas.html" class="nav-link">
+                            Amenitas
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li class="dropdown-item">
+                                <a href="#accommodation" class="dropdown-link" role="menuitem">Akomodasi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#facilities" class="dropdown-link" role="menuitem">Fasilitas</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#transportation" class="dropdown-link" role="menuitem">Transportasi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#transportation" class="dropdown-link" role="menuitem">Kuliner</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="home.html#products" class="nav-link">
+                            Produk Lokal
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="dropdown" role="menu">
+                            <li class="dropdown-item">
+                                <a href="prod.html#foods" class="dropdown-link" role="menuitem">Produk Pangan</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="prod.html#crafts" class="dropdown-link" role="menuitem">Kerajinan</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+
+                <!-- Translation Menu and Dark Mode Toggle -->
+                <div class="nav-right">
+                    <!-- Dark Mode Toggle -->
+                    <label class="switch">
+                        <span class="sun">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="#ffd43b">
+                                    <circle r="5" cy="12" cx="12"></circle>
+                                    <path
+                                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="moon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                                </path>
+                            </svg>
+                        </span>
+                        <input type="checkbox" class="input" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="amenities-hero" id="amenities-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <nav class="breadcrumb">
+                <a href="home.html">Beranda</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Amenitas</span>
+            </nav>
+            <h1 class="hero-title">Amenitas & Fasilitas</h1>
+            <p class="hero-subtitle">Fasilitas lengkap dan nyaman untuk mendukung pengalaman wisata Anda di Desa Golo
+                Loni</p>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="amenities-main">
+        <!-- Akomodasi Section -->
+        <section class="amenities-section accommodation-section" id="accommodation">
+            <div class="amenities-container">
+                <div class="amenities-section-header animate-on-scroll">
+                    <div class="section-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h2 class="amen-section-title">Akomodasi</h2>
+                    <p class="amen-section-subtitle">Tempat menginap yang nyaman dengan harga terjangkau dan fasilitas
+                        memadai </p>
+                </div>
+
+                <div class="accommodation-grid">
+                    <div class="accommodation-card featured-accommodation animate-on-scroll">
+                        <div class="accommodation-image">
+                            <img src="img/homestay2.jpeg" alt="Charlie's Homestay" loading="lazy">
+                            <div class="accommodation-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Rekomendasi</span>
+                            </div>
+                        </div>
+                        <div class="accommodation-content">
+                            <div class="accommodation-header">
+                                <h3 class="accommodation-title">Charlie's Homestay</h3>
+                                <div class="accommodation-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-text">5/5</span>
+                                </div>
+                            </div>
+
+                            <p class="accommodation-description">
+
+                                Nikmati pengalaman menginap dengan pemandangan alam yang menakjubkan dan keramahan
+                                warga lokal.
+                            </p>
+
+                            <div class="accommodation-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>WiFi Gratis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Sarapan & Dinner</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>Tempat Parkir</span>
+                                </div>
+                            </div>
+
+                            <div class="accommodation-details">
+                                <div class="price-info">
+                                    <div class="price-main">
+                                        <span class="price-amount">Rp 350.000</span>
+                                        <span class="price-unit">/ Room</span>
+                                    </div>
+                                    <div class="price-note">Termasuk sarapan dan dinner</div>
+                                </div>
+
+                                <div class="availability-info">
+                                    <div class="availability-status">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>10 unit tersedia</span>
+                                    </div>
+                                    <div class="capacity-info">
+                                        <i class="fas fa-users"></i>
+                                        <span>2-4 orang per unit</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accommodation-actions">
+                                <button class="btn-secondary accommodation-gallery">
+                                    <span>Lihat Galeri</span>
+                                </button>
+                                <a href="#contact">
+                                    <button class="btn-secondary accommodation-contact">
+                                        <i class="fas fa-phone"></i>
+                                        <span>Hubungi Kami</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popup Akomodasi -->
+            <div class="gallery-overlay" id="galleryOverlay">
+                <div class="gallery-popup" id="galleryPopup">
+                    <div class="gallery-header">
+                        <button class="gallery-close" id="galleryClose">&times;</button>
+                    </div>
+
+                    <div class="gallery-main">
+                        <img class="gallery-main-image" id="mainImage" src="" alt="Gallery Image">
+                        <button class="gallery-nav prev" id="prevBtn">‹</button>
+                        <button class="gallery-nav next" id="nextBtn">›</button>
+                    </div>
+
+                    <div class="gallery-footer">
+                        <div class="gallery-thumbnails" id="thumbnails"></div>
+
+                        <div class="gallery-counter">
+                            <span id="currentIndex">1</span> / <span id="totalImages">6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fasilitas Section -->
+        <section class="amenities-section facilities-section" id="facilities">
+            <div class="amenities-container">
+                <div class="facilities-header animate-on-scroll">
+                    <h2 class="facilities-main-title">Fasilitas</h2>
+                </div>
+
+                <div class="facilities-layout animate-on-scroll">
+                    <!-- Desktop/Tablet Button Grid -->
+                    <div class="facilities-buttons">
+                        <button class="facility-btn" data-facility="food-beverages">
+                            <span>Makanan & Minuman</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="accommodation">
+                            <span>Akomodasi</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="tourism-info">
+                            <span>Informasi Wisata</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="education">
+                            <span>Fasilitas Pendidikan</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="healthcare">
+                            <span>Fasilitas Kesehatan</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="religious">
+                            <span>Fasilitas Keagamaan</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="spot-foto-selfie">
+                            <span>Spot Foto & Selfie</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="area-parkir">
+                            <span>Area Parkir</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn" data-facility="outbound">
+                            <span>Outbound</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="facility-btn single-btn" data-facility="kamar-mandi-umum">
+                            <span>Toilet Umum</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Dropdown Menu -->
+                    <div class="facilities-dropdown-container">
+                        <label for="facilities-dropdown" class="facilities-dropdown-label">Pilih Fasilitas:</label>
+                        <select id="facilities-dropdown" class="facilities-dropdown"
+                            aria-label="Pilih fasilitas untuk melihat informasi">
+                            <option value="food-beverages">Makanan & Minuman</option>
+                            <option value="accommodation">Akomodasi</option>
+                            <option value="tourism-info">Informasi Wisata</option>
+                            <option value="education">Fasilitas Pendidikan</option>
+                            <option value="healthcare">Fasilitas Kesehatan</option>
+                            <option value="religious">Fasilitas Keagamaan</option>
+                            <option value="spot-foto-selfie">Spot Foto & Selfie</option>
+                            <option value="area-parkir">Area Parkir</option>
+                            <option value="outbound">Outbound</option>
+                            <option value="kamar-mandi-umum">Kamar Mandi Umum</option>
+                        </select>
+                        <i class="fas fa-chevron-down facilities-dropdown-icon"></i>
+                    </div>
+
+                    <div class="facilities-content">
+                        <div class="facility-text-box">
+                            <h3 class="facility-content-title">infrastruktur jalan</h3>
+                            <div class="facility-description-text">
+                                <p>Deskripsi...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transportasi & Kuliner Section -->
+        <section class="amenities-section transport-section" id="transportation">
+            <div class="amenities-container">
+                <div class="amenities-section-header animate-on-scroll">
+                    <div class="section-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h2 class="amen-section-title">Transportasi & Kuliner</h2>
+                    <p class="amen-section-subtitle">Layanan transportasi dan kuliner untuk kemudahan dan kenyamanan
+                        wisatawan</p>
+                </div>
+
+                <div class="transport-grid">
+                    <div class="transport-card animate-on-scroll">
+                        <div class="transport-image">
+                            <img src="img/bemo.jpg" alt="Bemo Transport" loading="lazy">
+                            <div class="transport-overlay">
+                                <div class="transport-badge">
+                                    <i class="fas fa-route"></i>
+                                    <span>Instant</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transport-content">
+                            <div class="transport-icon">
+                                <i class="fas fa-shuttle-van"></i>
+                            </div>
+                            <h3 class="transport-title">Bemo</h3>
+                            <p class="transport-description">
+                                Transportasi tradisional roda tiga untuk berkeliling desa dan berpergian.
+                            </p>
+                            <div class="transport-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Kapasitas 4 Orang</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Tersedia Pagi-Malam</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-money-bill"></i>
+                                    <span>Harga Tawar-menawar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card animate-on-scroll">
+                        <div class="transport-image">
+                            <img src="img/travel.jpg" alt="Travel Service" loading="lazy">
+                            <div class="transport-overlay">
+                                <div class="transport-badge">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Aman & Nyaman</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transport-content">
+                            <div class="transport-icon">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <h3 class="transport-title">Travel</h3>
+                            <p class="transport-description">
+                                Layanan transportasi antar kota dan bandara dengan kendaraan van atau minibus yang
+                                nyaman dan sopir berpengalaman.
+                            </p>
+                            <div class="transport-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Kapasitas 14 Orang</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-snowflake"></i>
+                                    <span>AC & Audio System</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <span>Antar Jemput Mudah</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card animate-on-scroll">
+                        <div class="transport-image">
+                            <img src="img/kedaikopi.jpg" alt="Kedai Kopi" loading="lazy">
+                            <div class="transport-overlay">
+                                <div class="transport-badge">
+                                    <i class="fas fa-coffee"></i>
+                                    <span>Kopi Aren Asli</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transport-content">
+                            <div class="transport-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3 class="transport-title">Kedai Kopi</h3>
+                            <p class="transport-description">
+                                Kedai kopi dengan kopi & aren asli dan berbagai camilan buatan lokal.
+                                Tempat yang sempurna untuk bersantai sambil menikmati pemandangan.
+                            </p>
+                            <div class="transport-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Kopi Organik</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-cookie"></i>
+                                    <span>Camilan Tradisional</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Gula Aren Asli</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <!-- Main Footer Area -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <!-- Brand & About Section -->
+                    <div class="footer-section footer-brand">
+                        <div class="footer-logo">
+                            <img src="img/LogoGL.png" alt="GOLO LONI Logo" class="footer-logo-icon">
+                            <div class="footer-logo-text">
+                                <h2>GOLO LONI</h2>
+                                <p>Desa Wisata</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Nikmati keindahan alam dan kekayaan budaya Manggarai di Desa Wisata Golo Loni.
+                            Destinasi wisata yang menawarkan pengalaman autentik dan tak terlupakan.
+                        </p>
+                        <div class="footer-social-media">
+                            <a href="https://www.instagram.com/gololoni_" class="footer-social-icon" title="Instagram"
+                                target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/desawisatagoloni/" class="footer-social-icon"
+                                title="Facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Navigation -->
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Navigasi</h3>
+                        <nav class="footer-nav">
+                            <a href="home.html" class="footer-nav-link">Beranda</a>
+                            <a href="home.html#about" class="footer-nav-link">Tentang Kami</a>
+                            <a href="home.html#attraction" class="footer-nav-link">Atraksi</a>
+                            <a href="home.html#packages" class="footer-nav-link">Paket Wisata</a>
+                            <a href="about.html#galeriAbout" class="footer-nav-link">Galeri</a>
+                        </nav>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Kontak</h3>
+                        <div class="footer-contact-info">
+                            <div class="footer-contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Golo Loni, Kec. Rana Mese, Kab. Manggarai Timur, NTT, Indonesia.</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+6282145315266">+62 821-4531-5266</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fa-brands fa-facebook"></i>
+                                <a href="https://www.facebook.com/desawisatagololoni"
+                                    target="_blank">desawisatagololoni</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="https://www.instagram.com/gololoni_?igshid=MWZjMTM2ODFkZg%3D%3D"
+                                    target="_blank">gololoni_</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Desa Wisata Golo Loni. Dikembangkan oleh <a href="#" target="_blank">Desa Golo Loni</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeToggle.classList.add('active');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = document.documentElement.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.classList.toggle('active');
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Hero scroll indicator
+        const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+        if (scrollIndicator) {
+            scrollIndicator.addEventListener('click', () => {
+                document.querySelector('#accommodation').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.amenities-hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            initThemeToggle(); // bind checkbox + set initial theme from localStorage
+
+            // Optional: set a system-preference default when no saved theme exists
+            if (!localStorage.getItem("theme")) {
+                document.documentElement.setAttribute(
+                    "data-theme",
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? "dark"
+                        : "light"
+                );
+            }
+
+            // If you want the new nav JS too:
+            // initNavigation();
+        });
+        function initNavigation() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const translationMenu = document.querySelector('.translation-menu');
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Hamburger menu toggle
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    navMenu.classList.toggle('show');
+                });
+            }
+
+            // Dropdown functionality
+            navItems.forEach(item => {
+                const dropdown = item.querySelector('.dropdown');
+                if (dropdown) {
+                    // Add keyboard navigation
+                    const navLink = item.querySelector('.nav-link');
+                    navLink.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            dropdown.classList.toggle('show');
+                        }
+                    });
+
+                    // Close dropdown when clicking outside
+                    document.addEventListener('click', function (e) {
+                        if (!item.contains(e.target)) {
+                            dropdown.classList.remove('show');
+                        }
+                    });
+
+                    // Close dropdown when mouse leaves the nav item
+                    item.addEventListener('mouseleave', function () {
+                        dropdown.classList.remove('show');
+                    });
+                }
+            });
+
+            // Translation menu functionality
+            if (translationMenu) {
+                const translationToggle = translationMenu.querySelector('.translation-toggle');
+                const translationDropdown = translationMenu.querySelector('.translation-dropdown');
+                const translationLinks = translationMenu.querySelectorAll('.translation-link');
+
+                // Keyboard navigation for translation menu
+                translationToggle.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        translationDropdown.classList.toggle('show');
+                    }
+                });
+
+                // Handle language selection
+                translationLinks.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const flag = this.querySelector('.language-flag').src;
+                        const label = this.querySelector('span').textContent.trim();
+                        const shortCode = label.toLowerCase().startsWith('eng') ? 'EN' : 'ID';
+
+                        // Update the toggle display
+                        translationToggle.querySelector('.language-flag').src = flag;
+                        translationToggle.querySelector('span').textContent = shortCode;
+
+                        // Hide dropdown
+                        translationDropdown.classList.remove('show');
+
+                        // Here you would implement actual language switching
+                        console.log('Language changed to:', label);
+                    });
+                });
+
+                // Close translation dropdown when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!translationMenu.contains(e.target)) {
+                        translationDropdown.classList.remove('show');
+                    }
+                });
+
+                // Close dropdown when mouse leaves the translation menu
+                translationMenu.addEventListener('mouseleave', function () {
+                    translationDropdown.classList.remove('show');
+                });
+            }
+        }
+        initNavigation();
+    </script>
+
+    <script src="js/akomodasi.js"></script>
+    <script src="js/facilities.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

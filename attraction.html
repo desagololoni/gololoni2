@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golo Loni - Atraksi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="attraction.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <a class="attraction-back" href="home.html#attraction">Kembali</a>
+        <img src="atraks/atraksii/img/tubbing/cover.jpg" class="hero-image" id="heroBackground">
+        <div class="overlay"></div>
+
+        <!-- Main Content Container -->
+        <div class="main-content-wrapper">
+            <div class="hero-content">
+                <p class="location-text">Placeholder</p>
+                <h1 class="hero-title">Placeholder</h1>
+                <p class="hero-description">Placeholder</p>
+                <a href="#secdesc" class="down-btn">
+                    Jelajahi <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+
+            <!-- Navigation Sidebar with Enhanced Carousel -->
+            <div class="navigation-sidebar">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Carousel items will be dynamically generated -->
+                        </div>
+                        <div class="carousel-indicators" id="carouselIndicators">
+                            <!-- Indicators will be dynamically generated -->
+                        </div>
+                    </div>
+
+                    <!-- Carousel Navigation -->
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" id="prevBtn">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <button class="carousel-btn" id="nextBtn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="desc" id="secdesc">
+        <div class="container-desc">
+            <!-- Navigation arrows for description section -->
+            <div class="desc-nav prev" id="descPrevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="desc-nav next" id="descNextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="left-section">
+                <img src="atraks/atraksii/img/tubbing/cover.jpg" alt="River Tubing Main Image" class="main-image"
+                    id="descMainImage">
+                <div class="image-indicators" id="imageIndicators">
+                    <div class="image-indicator active"></div>
+                    <div class="image-indicator"></div>
+                    <div class="image-indicator"></div>
+                </div>
+
+                <div class="bottom-images">
+                    <div class="bottom-image active" id="bottomImage1"></div>
+                    <div class="bottom-image" id="bottomImage2"></div>
+                    <div class="bottom-image" id="bottomImage3"></div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h1 class="title" id="descTitle">Placeholder</h1>
+                <p class="price" id="descPrice">Placeholder</p>
+                <p class="description" id="descDescription">Placeholder</p>
+
+                <div class="accommodation-section">
+                    <h2 class="accommodation-title">FASILITAS</h2>
+                    <p class="accommodation-desc" id="descAccommodation">Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendation-section" id="recommendationSection">
+        <p class="recommendation-title">DAYA TARIK</p>
+        <div class="recommendation-content" id="recommendationContent">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+        <div class="recommendation-features" id="recommendationFeatures">
+            <!-- Dynamic features will be inserted here -->
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <!-- Main Footer Area -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <!-- Brand & About Section -->
+                    <div class="footer-section footer-brand">
+                        <div class="footer-logo">
+                            <img src="img/LogoGL.png" alt="GOLO LONI Logo" class="footer-logo-icon">
+                            <div class="footer-logo-text">
+                                <h2>GOLO LONI</h2>
+                                <p>Desa Wisata</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Nikmati keindahan alam dan kekayaan budaya Manggarai di Desa Wisata Golo Loni.
+                            Destinasi wisata yang menawarkan pengalaman autentik dan tak terlupakan.
+                        </p>
+                        <div class="footer-social-media">
+                            <a href="https://www.instagram.com/gololoni_" class="footer-social-icon" title="Instagram"
+                                target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/desawisatagoloni/" class="footer-social-icon"
+                                title="Facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Navigation -->
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Navigasi</h3>
+                        <nav class="footer-nav">
+                            <a href="home.html" class="footer-nav-link">Beranda</a>
+                            <a href="home.html#about" class="footer-nav-link">Tentang Kami</a>
+                            <a href="home.html#attraction" class="footer-nav-link">Atraksi</a>
+                            <a href="home.html#packages" class="footer-nav-link">Paket Wisata</a>
+                            <a href="about.html#galeriAbout" class="footer-nav-link">Galeri</a>
+                        </nav>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Kontak</h3>
+                        <div class="footer-contact-info">
+                            <div class="footer-contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Golo Loni, Kec. Rana Mese, Kab. Manggarai Timur, NTT, Indonesia.</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+6282145315266">+62 821-4531-5266</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fa-brands fa-facebook"></i>
+                                <a href="https://www.facebook.com/desawisatagololoni"
+                                    target="_blank">desawisatagololoni</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="https://www.instagram.com/gololoni_?igshid=MWZjMTM2ODFkZg%3D%3D"
+                                    target="_blank">gololoni_</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Desa Wisata Golo Loni. Dikembangkan oleh <a href="#" target="_blank">Desa Golo Loni</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // KONTEN DARI TIAP ATRAKSI - DATA ASLI DARI DESA WISATA GOLO LONI
+        // Isi semua data
+        const packageContent = [
+            {
+                title: 'River Tubing',
+                location: 'Sungai Wae Dingin',
+                heroTitle: 'River<br>Tubing',
+                description: 'Nikmati sensasi mengarungi sungai dengan ban, mengikuti arus sambil menikmati kehijauan alam sekitar.',
+                image: 'atraks/atraksii/img/tubbing/cover.jpg',
+                category: 'Wisata Alam',
+                // KONTEN ATRAKSI DI SECTION DESKRIPSI
+                descTitle: 'RIVER TUBING',
+                descPrice: 'RP 75.000,00',
+                descDescription: 'Nikmati sensasi mengarungi sungai dengan ban, mengikuti arus sambil menikmati kehijauan alam sekitar. ',
+                descAccommodation: 'Petugas yang bersiaga di titik-titik yang membutuhkan bantuan. Persewaan alat river tubing, kamar ganti untuk pengunjung. Minuman hangat dan cemilan khas desa Golo Loni, yaitu Kripik Pegagang.',
+                // GAMBAR TAMBAHAN
+                bottomImages: [
+                    'atraks/atraksii/img/tubbing/1.jpg',
+                    'atraks/atraksii/img/tubbing/2.jpg',
+                    'atraks/atraksii/img/tubbing/3.jpg'
+                ],
+
+                // KONTEN DAYA TARIK DAN REKOMENDASI
+                dayaTarik: "River Tubing menawarkan pengalaman menyusuri sungai yang menyenangkan dengan jeram yang tidak terlalu menantang. Nikmati keindahan alam sekitar sambil merasakan sensasi mengapung di atas ban.",
+                rekomendasi: "Waktu terbaik untuk menikmati atraksi river tubing ini adalah pagi sampai siang hari karena di sore hari selain cuaca dingin, di Desa Golo Loni sering turun hujan pada dimulai pukul 15.00 WITA.",
+                features: [
+                    {
+                        icon: "fa-water",
+                        title: "Satu-satunya di Flores",
+                        description: "River Tubing satu-satunya di daratan Pulau Flores dengan pengalaman unik."
+                    },
+                    {
+                        icon: "fa-tree",
+                        title: "Hutan Konservasi",
+                        description: "Berbatasan langsung dengan kawasan hutan konservasi dengan keanekaragaman vegetasi."
+                    },
+                    {
+                        icon: "fa-bird",
+                        title: "Burung Endemik",
+                        description: "Rumah bagi burung endemik Flores yang dapat diamati selama aktivitas."
+                    }
+                ]
+            },
+            {
+                title: 'Bird Watching',
+                location: 'Kawasan Hutan Konservasi',
+                heroTitle: 'Bird<br>Watching',
+                description: 'Amati berbagai jenis burung endemik dan migran di habitat aslinya. Sebuah surga bagi para pecinta ornitologi.',
+                image: 'atraks/atraksii/img/bird watching/2.jpg',
+                category: 'Wisata Alam',
+                // New properties for description section
+                descTitle: 'BIRD WATCHING',
+                descPrice: 'RP 150.000,00',
+                descDescription: 'Amati berbagai jenis burung endemik dan migran di habitat aslinya. Sebuah surga bagi para pecinta ornitologi.',
+                descAccommodation: 'Terdapat selfie area yang bisa digunakan untuk mengambil foto.',
+                bottomImages: [
+                    'atraks/atraksii/img/bird watching/burung.jpg',
+                    'atraks/atraksii/img/bird watching/burung1.jpg',
+                    'atraks/atraksii/img/bird watching/2.jpg'
+                ],
+                // New properties for daya tarik section
+                dayaTarik: "Pengalaman ekowisata yang menakjubkan dengan mengamati burung endemik Flores di habitat aslinya. Kawasan hutan konservasi yang masih alami memberikan kesempatan untuk melihat berbagai spesies burung yang tidak ditemukan di tempat lain.",
+                rekomendasi: "Waktu terbaik untuk aktivitas pengamatan burung adalah pada pagi – pagi buta saat hari masih gelap. Hal ini dilakukan demi kesempatan terbaik untuk bertemu salah satu penghuni hutan Ranamese, yakni Celepuk Flores (Otus alfredi). Selain Celepuk Flores, di sekitar danau juga bisa dijumpai jenis Celepuk Wallacea (Otus silvicola).",
+                features: [
+                    {
+                        icon: "fa-binoculars",
+                        title: "Burung Endemik",
+                        description: "Mengamati burung endemik Flores yang tidak ditemukan di tempat lain di dunia."
+                    },
+                    {
+                        icon: "fa-leaf",
+                        title: "Ekowisata",
+                        description: "Aktivitas ramah lingkungan yang mendukung konservasi hutan dan satwa liar."
+                    },
+                    {
+                        icon: "fa-camera",
+                        title: "Dokumentasi",
+                        description: "Kesempatan untuk memotret burung-burung langka dalam habitat aslinya."
+                    }
+                ]
+            },
+            {
+                title: 'Waterfall',
+                location: 'Air Terjun',
+                heroTitle: 'Waterfall',
+                description: 'Segarkan diri dengan bermain air di bawah gemuruh air terjun yang jernih dan alami.',
+                image: 'atraks/atraksii/img/air terjun/1.jpg',
+                category: 'Wisata Alam',
+                // New properties for description section
+                descTitle: 'WATERFALL',
+                descPrice: 'RP 15.000,00',
+                descDescription: 'Segarkan diri dengan bermain air di bawah gemuruh air terjun yang jernih dan alami. Desa Golo Loni memiliki beberapa air terjun yang indah. Total ada empat air terjun yang terdapat di Desa Golo Loni. Air terjun tersebut terletak di beberapa lokasi terpisah di wilayah desa. ',
+                descAccommodation: 'Tersedia kamar mandi dan selfie area.',
+                bottomImages: [
+                    'atraks/atraksii/img/air terjun/1.jpg',
+                    'atraks/atraksii/img/air terjun/2.jpeg',
+                    'atraks/atraksii/img/air terjun/3.jpg'
+                ],
+                // New properties for daya tarik section
+                dayaTarik: "Desa Golo Loni memiliki beberapa air terjun  yang indah. Total ada empat air terjun yang terdapat di Desa Golo Loni. Air terjun tersebut terletak di beberapa lokasi terpisah di wilayah desa. Ada yang berlokasi di areal persawahan, sungai dan dekat pemukiman warga. Jaraknya yang tidak terlalu jauh dari akses jalan memungkinkan air terjun ini dapat dijangkau dengan mudah. Masing-masing air terjun tersebut memiliki karakteristik dan keunikan yang berbeda.",
+
+                features: [
+                    {
+                        icon: "fa-water",
+                        title: "Cunca Neol",
+                        description: "Airnya yang sejuk dengan panorama alam yang indah membuat wisatawan betah untuk berlama-lama di sini. Untuk mencapai Air Terjun Cunca Neol, pengunjung harus melewati persawahan warga Desa Golo Loni dan turun ke Sungai Wae Dingin. Untuk menempuhnya dibutuhkan sekitar 15 menit dari area parkir."
+                    },
+                    {
+                        icon: "fa-water",
+                        title: "Cunca Caru",
+                        description: "Air terjun ini cukup ikonik karena dapat dilihat dari jalan utama Trans Flores. Jarak air terjun ini sangat dekat dari jalan raya sehingga memudahkan pengunjung untuk melihatnya dan menjadi spot foto yang indah."
+                    },
+                    {
+                        icon: "fa-water",
+                        title: "Cunca Kempo 1",
+                        description: "Di dekat air terjun terdapat rest area dan tempat makan bagi pengunjung."
+                    },
+                    {
+                        icon: "fa-water",
+                        title: "Cunca Kempo 2",
+                        description: "Air terjun ini berdekatan dengan air terjun cunca Kempo 1 . Rangkaian kedua air terjun  ini menghasilkan panorama yang sangat indah."
+                    }
+                ]
+            },
+            // ATRAKSI LAGI
+            {
+                title: 'Tracking',
+                location: 'Persawahan, sungai, kebun, air terjun',
+                heroTitle: 'Tracking',
+                description: 'Trekking melewati jalur persawahan, sungai, kebun dan melihat berbagai pemandangan dan air terjun. ',
+                image: 'atraks/atraksii/img/trekking/1.png',
+                category: 'Wisata Alam',
+                descTitle: 'TRACKING',
+                descPrice: 'RP 50.000,00',
+                descDescription: 'Trekking melewati jalur persawahan, sungai, kebun dan melihat berbagai pemandangan dan air terjun. Aktivitas river trekking ini memanfaatkan kawasan sungai Wae Dingin yang membentang sepanjang wilayah desa. Lokasi sungai Wae Dingin membentang dari kawasan hutan konservasi Taman Wisata Alam Ruteng.',
+                descAccommodation: 'Terdapat persewaan alat tracking, selfie area, dan tempat makan.',
+                bottomImages: [
+                    'atraks/atraksii/img/trekking/1.png',
+                    'atraks/atraksii/img/trekking/2.jpeg',
+                    'atraks/atraksii/img/trekking/3.jpg'
+                ],
+                dayaTarik: "Sepanjang sungai kita akan dimanjakan dengan pemandangan alam yang indah  dengan vegetasi yang masih alami. Selain itu kita juga dapat menikmati satwa burung yang banyak dijumpai di sepanjang sungai. Tersedia  tiga pilihan jarak trekking  yakni jarak pendek, menengah dan panjang.",
+                features: [
+                    {
+                        icon: "fa-hiking",
+                        title: "Jarak Pendek"
+                    },
+                    {
+                        icon: "fa-hiking",
+                        title: "Jarak Menengah",
+                    },
+                    {
+                        icon: "fa-hiking",
+                        title: "Jarak Panjang"
+                    }
+                ]
+            },
+            {
+                title: 'Ritual Penti',
+                location: 'Desa Wisata Golo Loni',
+                heroTitle: 'Ritual<br>Penti',
+                description: 'Ikuti upacara adat Penti, sebuah ritual syukur atas hasil panen yang kaya akan nilai-nilai kearifan lokal.',
+                image: 'atraks/atraksii/img/penti/1.jpg',
+                category: 'Wisata Budaya',
+                descTitle: 'RITUAL PENTI',
+                descPrice: 'RP Belum',
+                descDescription: 'Ikuti upacara adat Penti, sebuah ritual syukur atas hasil panen yang kaya akan nilai-nilai kearifan lokal.',
+                descAccommodation: 'Belum',
+                bottomImages: [
+                    'atraks/atraksii/img/penti/1.jpg',
+                    'atraks/atraksii/img/penti/2.jpg',
+                    'atraks/atraksii/img/penti/3.jpg'
+                ],
+                dayaTarik: "Ritual Penti adalah upacara adat suci suku Manggarai yang dilakukan setiap tahun sebagai ungkapan syukur atas hasil panen dan doa untuk kemakmuran tahun baru, melibatkan pemurnian dosa, pemanggilan roh leluhur melalui ritual seperti Barong Wae dan Compang, nyanyian Sanda sepanjang malam, serta pertunjukan Tari Caci yang menampilkan ketangkasan dan solidaritas antar kampung.",
+                features: [
+                    {
+                        icon: "fa-home",
+                        title: "Rumah Adat Mbaru Niang",
+                        description: "Pusat pelaksanaan ritual di rumah adat tradisional berbentuk kerucut, simbol keharmonisan keluarga dan leluhur, di mana musyawarah pembagian panen dilakukan."
+                    },
+                    {
+                        icon: "fa-tshirt",
+                        title: "Pakaian Adat Songket",
+                        description: "Penari dan peserta mengenakan kain songket Manggarai dengan aksesori manik-manik, melambangkan status sosial dan kekayaan budaya selama upacara."
+                    },
+                    {
+                        icon: "fa-music",
+                        title: "Nyanyian Sanda dan Gong",
+                        description: "Kidung tradisional Sanda dinyanyikan tanpa henti sepanjang malam untuk menghormati leluhur, diiringi gong dan gendang yang menciptakan suasana sakral."
+                    }
+                ]
+            },
+            {
+                title: 'Golo Depet',
+                location: 'Bukit Golo Depet',
+                heroTitle: 'Golo<br>Depet',
+                description: 'Saksikan pemandangan matahari terbit atau terbenam yang spektakuler dari puncak bukit Golo Depet.',
+                image: 'atraks/atraksii/img/bukit/1.jpg',
+                category: 'Wisata Alam',
+                descTitle: 'GOLO DEPET',
+                descPrice: 'RP 15.000,00',
+                descDescription: 'Saksikan pemandangan matahari terbit atau terbenam yang spektakuler dari puncak bukit Golo Depet. Golo Depet atau Bukit Kunang- Kunang, merupakan tempat untuk berswafoto bagi para wisatawan. Karena letaknya di atas bukit, wisatawan bisa menikmati keindahan barisan bukit yang berdempeten dengan hamparan sawah terasering dan padi yang tengah menguning. Tempat ini memang menawarkan pesona alam yang begitu indah nan pesona. Untuk bisa berswafoto ria di tempat itu, wisawatawan lokal membayar tiket Rp.10 ribu per orang. Sementara untuk wisatawan asing, Rp.15 ribu per orang.',
+                descAccommodation: 'Di atas bukit ini, sudah disiapkan lopo dan tenda-tenda untuk berswafoto ria. Untuk bisa mendapatkan hasil gambar yang bagus, pengunjung bisa duduk dan berdiri di tenda-tenda khusus yang telah dibangun. Pengunjung bisa duduk santai sambil menikmati pesona alam yang maha indah sejauh mata memandang. ',
+                bottomImages: [
+                    'atraks/atraksii/img/bukit/1.jpg',
+                    'atraks/atraksii/img/bukit/2.jpg',
+                    'atraks/atraksii/img/bukit/3.jpg'
+                ],
+                dayaTarik: "Tidak hanya keindahan alam, Golo depet juga menampilkan tulisan-tulisan motivasi dan romantis ala milenial yang bikin pengunjung baper. Tidak sedikit juga wisatawan berselfie ria berlatar tulisan-tulisan tersebut.",
+                features: [
+                    {
+                        icon: "fa-sun",
+                        title: "Pemandangan",
+                        description: "Saksikan pemandangan matahari terbit atau terbenam yang spektakuler dari puncak bukit Golo Depet."
+                    },
+                    {
+                        icon: "fa-ink",
+                        title: "Tulisan Motivasi",
+                        description: "Tidak hanya keindahan alam, Golo depet juga menampilkan tulisan-tulisan motivasi dan romantis ala milenial."
+                    },
+                    {
+                        icon: "fa-camera",
+                        title: "Bebas Foto",
+                        description: "Setelah membayar tiket masuk, pengunjung bebas mengambil foto dari berbagai angle di tempat yang sudah disediakan."
+                    }
+                ]
+            },
+            {
+                title: 'Spot Memancing',
+                location: 'Kolam ikan',
+                heroTitle: 'Spot<br>Memancing',
+                description: 'Uji keberuntungan dan kesabaran Anda dengan memancing di danau atau sungai yang kaya akan ikan, di mana atraksi ini dilakukan di setiap kolam ikan yang telah disediakan oleh masyarakat dan ikan hasil tangkapan dapat ditimbang untuk dibawa pulang atau dinikmati langsung di tempat.',
+                image: 'atraks/atraksii/img/memancing/1.JPG',
+                category: 'Wisata Alam',
+                descTitle: 'SPOT MEMANCING',
+                descPrice: 'RP 50.000,00',
+                descDescription: 'Uji keberuntungan dan kesabaran Anda dengan memancing di danau atau sungai yang kaya akan ikan, di mana atraksi ini dilakukan di setiap kolam ikan yang telah disediakan oleh masyarakat dan ikan hasil tangkapan dapat ditimbang untuk dibawa pulang atau dinikmati langsung di tempat. Mayoritas mata pencaharian masyarakat Desa Golo Loni bergantung pada sektor dan pertanian. Kondisi alam Desa Golo Loni yang masih tergolong asri, dan saluran perairan yang baik, membuat sektor perikanan dan pertanian menjadi sektor yang bisa diandalkan',
+                descAccommodation: 'Terdapat kamar mandi umum, persewaan alat pancing, selfie area, dan tempat makan.',
+                bottomImages: [
+                    'atraks/atraksii/img/memancing/1.JPG',
+                    'atraks/atraksii/img/memancing/2.jpeg',
+                    'atraks/atraksii/img/memancing/3.jpeg'
+                ],
+                dayaTarik: "Banyak warga Desa Golo Loni yang telah memiliki tambak di Kawasan persawahan desa yang mengembangbiakkan berbagai jenis ikan . Dengan adanya tambak Ikan tersebut maka kebutuhan makan minum bagi wisatawan akan terpenuhi.",
+                features: [
+                    {
+                        icon: "fa-fish",
+                        title: "Ikan Segar",
+                        description: "Nikmati ikan segar hasil tangkapan Anda yang dapat langsung dimasak di tempat."
+                    },
+                    {
+                        icon: "fa-water",
+                        title: "Kolam Alami",
+                        description: "Memancing di kolam alami yang dikelola oleh masyarakat setempat."
+                    },
+                    {
+                        icon: "fa-leaf",
+                        title: "Lingkungan Asri",
+                        description: "Suasana persawahan yang tenang dan asri menambah kenikmatan memancing."
+                    }
+                ]
+            },
+            {
+                title: 'Flying Fox',
+                location: 'Area Outbound',
+                heroTitle: 'Flying Fox',
+                description: 'Rasakan adrenalin terpacu saat meluncur dari ketinggian dengan flying fox sepanjang 200 meter di atas persawahan masyarakat setempat, melintasi lembah dengan pemandangan indah dan sensasi alam persawahan yang menakjubkan.',
+                image: 'atraks/atraksii/img/flying fox/1.jpeg',
+                category: 'Wisata Buatan',
+                descTitle: 'FLYING FOX',
+                descPrice: 'RP Belum',
+                descDescription: 'Rasakan adrenalin terpacu saat meluncur dari ketinggian dengan flying fox sepanjang 200 meter di atas persawahan masyarakat setempat, melintasi lembah dengan pemandangan indah dan sensasi alam persawahan yang menakjubkan.',
+                descAccommodation: 'Belum',
+                bottomImages: [
+                    'atraks/atraksii/img/flying fox/1.jpeg',
+                    'atraks/atraksii/img/flying fox/2.jpeg',
+                    'atraks/atraksii/img/flying fox/3.jpeg'
+                ],
+                dayaTarik: "Belum",
+                rekomendasi: "Belum",
+                features: [
+                    {
+                        icon: "fa-leaf",
+                        title: "Pemandangan Asri",
+                        description: "Nikmati pemandangan persawahan yang hijau dan asri saat meluncur di atasnya."
+                    },
+                    {
+                        icon: "fa-camera",
+                        title: "Belum",
+                        description: "Belum"
+                    },
+                    {
+                        icon: "fa-sun",
+                        title: "Belum",
+                        description: "Belum"
+                    }
+                ]
+            },
+            {
+                title: 'Gua Watu Tahang',
+                location: 'Gua Watu Tahang',
+                heroTitle: 'Gua<br>Watu Tahang',
+                description: 'Jelajahi misteri Gua Watu Tahang, sebuah gua alam dengan formasi batuan stalaktit dan stalagmit yang unik yang terletak tepat di bawah persawahan masyarakat, di dalamnya terdapat banyak batu kapur dan dialiri air yang bersumber dari mata air.',
+                image: 'atraks/atraksii/img/gua/1.jpg',
+                category: 'Wisata Alam',
+                descTitle: 'GUA WATU TAHANG',
+                descPrice: 'RP 20.000,00',
+                descDescription: 'Jelajahi misteri Gua Watu Tahang, sebuah gua alam dengan formasi batuan stalaktit dan stalagmit yang unik yang terletak tepat di bawah persawahan masyarakat, di dalamnya terdapat banyak batu kapur dan dialiri air yang bersumber dari mata air. Di dalam gua dapat disaksikan stalagtit serta kawanan kelelawar yang bersarang di dalam gua. Kondisi dan letak gua yang cukup mudah dijangkau ini memungkinkan untuk dinikmati bersama keluarga, karena keadaan gua yang tidak terlalu dalam serta akses masuk yang cukup nyaman. Gua Watu Tahang merupakan gua karst.',
+                descAccommodation: 'Terdapat selfie area, adapun akses jalan menuju gua alam Watu Tahang. Jika dari Borong, Ibu Kota Kabupaten Manggarai Timur pengunjung mengikuti jalan Negara Trans Flores dengan jarak sekitar 20 kilometer (KM), jika dari Ruteng, pusat Ibu Kota Kabupaten Manggarai menempuh jarak sekitar 30 KM juga melewati jalan Trans Flores.',
+                bottomImages: [
+                    'atraks/atraksii/img/gua/1.jpg',
+                    'atraks/atraksii/img/gua/2.jpeg',
+                    'atraks/atraksii/img/gua/3.jpeg'
+                ],
+                dayaTarik: "Di dalam gua dapat disaksikan stalagtit serta kawanan kelelawar yang bersarang di dalam gua. Kondisi dan letak gua yang cukup mudah dijangkau ini memungkinkan untuk dinikmati bersama keluarga, karena keadaan gua yang tidak terlalu dalam serta akses masuk yang cukup nyaman.",
+                rekomendasi: "Gua alam ini terletak di bawah hamparan persawahan, panjangnya kurang lebih 100 meter dengan dialiri air yg bersumber dari dari mata air Wae Mao dengan sensasi dingin yang memanjakan badan",
+                features: [
+                    {
+                        icon: "fa-cave",
+                        title: "Formasi Batu Unik",
+                        description: "Nikmati keindahan formasi batuan stalaktit dan stalagmit yang menakjubkan."
+                    },
+                    {
+                        icon: "fa-water",
+                        title: "Sumber Air",
+                        description: "Gua ini dialiri air yang bersumber dari mata air alami."
+                    },
+                    {
+                        icon: "fa-leaf",
+                        title: "Lingkungan Asri",
+                        description: "Terletak di lingkungan persawahan yang hijau dan asri."
+                    }
+                ]
+            },
+            {
+                title: 'Bersepeda',
+                location: 'Jalan setapak, persawahan, dan perkampungan warga',
+                heroTitle: 'Bersepeda',
+                description: 'Nikmati udara segar pedesaan dengan bersepeda menyusuri jalan setapak, persawahan, dan perkampungan warga.',
+                image: 'atraks/atraksii/img/sepeda/1.jpeg',
+                category: 'Wisata Buatan',
+                descTitle: 'BERSEPEDA',
+                descPrice: 'RP 30.000,00',
+                descDescription: 'Nikmati udara segar pedesaan dengan bersepeda menyusuri jalan setapak, persawahan, dan perkampungan warga. Paket wisata bersepeda yang dijual dapat memilih long trek yang dimulai dari Danau Rana Mese dan melintasi seluruh wilayah Desa Golo Loni dan finish di areal persawahan agrowisata. Untuk short trek dapat memilih jalur dari perkampungan Golo Loni menuju kawasan agrowisata.',
+                descAccommodation: 'tersedia jalur sepeda di sepanjang areal persawahan atau agrowisata Golo Loni. Untuk menjamin keamanan dan kenyamanan wisatawan pengelola menyediakan pemandu wisata yang akan menemani pengunjung selama bersepeda.',
+                bottomImages: [
+                    'atraks/atraksii/img/sepeda/1.jpeg',
+                    'atraks/atraksii/img/sepeda/2.jpg',
+                    'atraks/atraksii/img/sepeda/3.jpeg'
+                ],
+                dayaTarik: "Rute bersepeda dengan pemandangan alam yang indah. Tersedia pilihan rute pendek dan panjang sesuai tingkat kenyamanan pengunjung.",
+                features: [
+                    {
+                        icon: "fa-bicycle",
+                        title: "Rute Bersepeda",
+                        description: "Nikmati udara segar pedesaan dengan bersepeda menyusuri jalan setapak, persawahan, dan perkampungan warga."
+                    },
+                    {
+                        icon: "fa-map",
+                        title: "Pilihan Rute",
+                        description: "Paket wisata bersepeda yang dijual dapat memilih long trek yang dimulai dari Danau Rana Mese dan melintasi seluruh wilayah Desa Golo Loni dan finish di areal persawahan agrowisata. Untuk short trek dapat memilih jalur dari perkampungan Golo Loni menuju kawasan agrowisata."
+                    },
+                    {
+                        icon: "fa-helmet-safety",
+                        title: "Keamanan Terjamin",
+                        description: "Untuk menjamin keamanan dan kenyamanan wisatawan pengelola menyediakan pemandu wisata yang akan menemani pengunjung selama bersepeda."
+                    }
+                ]
+            },
+            {
+                title: 'Danau Rana Mese',
+                location: 'Danau Rana Mese',
+                heroTitle: 'Danau<br>Rane Mese',
+                description: 'Kunjungi keindahan Danau Rana Mese, sebuah danau kawah yang tenang dengan panorama alam yang menyejukkan mata, terletak di kawasan Hutan Lindung dan menjadi sumber air minum untuk masyarakat Golo Loni khususnya serta masyarakat Kabupaten Manggarai Timur umumnya.',
+                image: 'atraks/atraksii/img/danau/1.jpg',
+                category: 'Wisata Alam',
+                descTitle: 'DANAU RANA MESE',
+                descPrice: 'RP 10.000,00',
+                descDescription: 'Kunjungi keindahan Danau Rana Mese, sebuah danau kawah yang tenang dengan panorama alam yang menyejukkan mata, terletak di kawasan Hutan Lindung dan menjadi sumber air minum untuk masyarakat Golo Loni khususnya serta masyarakat Kabupaten Manggarai Timur umumnya. Danau Rana Mese diapit Gunung Mandosawu puncak tertinggi di Manggarai Timur dan Gunung Ranaka (2.140 mdpl) puncak tertinggi kedua. Kawasan di wilayah ini dipenuhi berbagai flora dan fauna menemani sejuknya alam di kawasan ini.',
+                descAccommodation: 'Terdapat kamar mandi dan selfie area, dan pemandu wisata lokal.',
+                bottomImages: [
+                    'atraks/atraksii/img/danau/1.jpg',
+                    'atraks/atraksii/img/danau/2.JPG',
+                    'atraks/atraksii/img/danau/3.jpg'
+                ],
+                dayaTarik: "Beberapa aktivitas yang dapat dilakukan di dalam Kawasan Danau Rana Mese adalah trekking mengililingi danau, menikmati panorama air terjun dan aktivitas pengamatan burung.",
+                rekomendasi: "Belum",
+                features: [
+                    {
+                        icon: "fa-leaf",
+                        title: "Pemandanan Asri",
+                        description: "Nikmati pemandangan danau yang indah, dan berbagai flora dan fauna di sekitarnya."
+                    },
+                    {
+                        icon: "fa-binoculars",
+                        title: "Pengamatan Burung",
+                        description: "Kawasan ini merupakan habitat bagi berbagai jenis burung endemik Flores."
+                    },
+                    {
+                        icon: "fa-tree",
+                        title: "Anggrek Hutan",
+                        description: "Terlihat beberapa jenis anggrek hutan seperti  Dendrobium hymenophyllum, Vanda limbata, Pholidota imbricate, Spathoglottis plicata, Liparia latifolia dan anggrek kantong semar (Paphiopedilum schoseri)."
+                    }
+                ]
+            },
+            {
+                title: 'Adopsi Bambu',
+                location: 'Lahan Bambu',
+                heroTitle: 'Adopsi<br>Bambu',
+                description: 'Program adopsi bambu di Desa Wisata Golo Loni merupakan bagian dari upaya pelestarian bambu, penghijauan lingkungan desa serta upaya mengantisipasi erosi yang diakibatkan oleh bencana alam.',
+                image: 'atraks/atraksii/img/bambu/3.jpg',
+                category: 'Wisata Alam',
+                descTitle: 'ADOPSI BAMBU',
+                descPrice: 'RP 20.000,00',
+                descDescription: 'Program adopsi bambu di Desa Wisata Golo Loni merupakan bagian dari upaya pelestarian bambu, penghijauan lingkungan desa serta upaya mengantisipasi erosi yang diakibatkan oleh bencana alam. Selain itu program  adopsi bambu yang bekerjasama dengan Yayasan Bambu Lestari juga bertujuan mewujudkan Desa Golo Loni sebagai desa wisata hijau yang mengusung konsep keberlanjutan.  Secara berkala kondisi perkembangan bambu akan disampaikan kepada wisatawan yang telah kembali ke daerah atau negara asalnya.',
+                descAccommodation: 'Setiap wisatawan yang berkunjung akan diarahkan untuk menanam bambu di lahan yang telah disediakan. Pengelola desa wisata Golo Loni juga telah menyiapkan pemandu khusus adopsi bambu yang merupakan kader binaan Yayasan Bambu Lestari.',
+                bottomImages: [
+                    'atraks/atraksii/img/bambu/3.jpg',
+                    'atraks/atraksii/img/bambu/2.jpeg',
+                    'atraks/atraksii/img/bambu/1.jpeg'
+
+                ],
+                dayaTarik: "Secara berkala kondisi perkembangan bambu akan disampaikan kepada wisatawan yang telah kembali ke daerah atau negara asalnya. Penanaman bambu merupakan bagian dari edukasi bagi masyarakat akan arti pentingnya keberadaan bambu sebagai tanaman yang berfungsi menjaga ketersediaan air bersih bagi masyarakat desa. Aktivitas adopsi bambu dengan melakukan penanaman bambu oleh wisatawan merupakan salah satu inovasi dan upaya pengelola desa wisata Golo Loni desa wisata hijau (green tourism) mewujudkan kosep  pariwisata berkelanjutan ( suistainable tourism ).",
+                features: [
+                    {
+                        icon: "fa-seedling",
+                        title: "Pelestarian Bambu",
+                        description: "Kontribusi dalam pelestarian bambu dan penghijauan lingkungan desa."
+                    },
+                    {
+                        icon: "fa-tree",
+                        title: "Lingkungan Hijau",
+                        description: "Mendukung upaya penghijauan lingkungan."
+                    },
+                    {
+                        icon: "fa-globe",
+                        title: "Pariwisata Berkelanjutan",
+                        description: "Bagian dari konsep pariwisata berkelanjutan di Desa Golo Loni."
+                    }
+                ]
+            },
+            {
+                title: ' River Camping',
+                location: 'Tepi Sungai Wae Dingin',
+                heroTitle: 'River Camping',
+                description: 'Habiskan malam di tepi sungai dan di tengah alam, berkemah di bawah bintang dengan suara alam.',
+                image: 'atraks/atraksii/img/camping/1.jpeg',
+                category: 'Wisata Alam',
+                descTitle: 'RIVER CAMP',
+                descPrice: 'RP 30.000,00',
+                descDescription: 'Habiskan malam di tepi sungai dan di tengah alam, berkemah di bawah bintang dengan suara alam.',
+                descAccommodation: 'Tenda camping, kamar mandi bersama, sarapan pagi, selfie area',
+                bottomImages: [
+                    'atraks/atraksii/img/camping/1.jpeg',
+                    'atraks/atraksii/img/camping/2.jpg',
+                    'atraks/atraksii/img/camping/3.jpg'
+                ],
+                dayaTarik: "Keindahan Sungai Wae Dingin dengan air jernih dan aliran yang tenang. Pemandangan langit malam yang bebas polusi cahaya, ideal untuk stargazing. Suasana alam yang asri dengan udara sejuk dan vegetasi hijau.",
+                features: [
+                    {
+                        icon: "fa-campground",
+                        title: "Area Kemah yang Nyaman",
+                        description: "Tenda disediakan dengan lokasi strategis di tepi sungai, aman dan terjangkau."
+                    },
+                    {
+                        icon: "fa-tree",
+                        title: "Keindahan Alam",
+                        description: "Pemandangan alam yang menenangkan."
+                    },
+                    {
+                        icon: "fa-moon",
+                        title: "Stargazing",
+                        description: "Nikmati langit malam yang jernih, sempurna untuk mengamati bintang."
+                    }
+                ]
+            },
+            {
+                title: 'Produksi Kopi & Aren',
+                location: 'Kebun Aren dan Kopi',
+                heroTitle: 'Produksi<br>Kopi & Aren',
+                description: 'Belajar langsung dari para petani bagaimana biji kopi dan nira aren dipanen, diolah, hingga menjadi produk siap saji seperti kopi nikmat dan gula aren. Atraksi wisata ini akan membawa Anda melihat seluruh prosesnya, dari bahan mentah hingga produk akhir, memberikan wawasan mendalam yang tak terlupakan.',
+                image: 'atraks/atraksii/img/kopi/1.jpg',
+                category: 'Wisata Budaya',
+                descTitle: 'PRODUKSI KOPI & AREN',
+                descPrice: 'RP Belum',
+                descDescription: 'Belajar langsung dari para petani bagaimana biji kopi dan nira aren dipanen, diolah, hingga menjadi produk siap saji seperti kopi nikmat dan gula aren. Atraksi wisata ini akan membawa Anda melihat seluruh prosesnya, dari bahan mentah hingga produk akhir, memberikan wawasan mendalam yang tak terlupakan.',
+                descAccommodation: 'Belum',
+                bottomImages: [
+                    'atraks/atraksii/img/kopi/1.jpg',
+                    'atraks/atraksii/img/kopi/2.jpg',
+                    'atraks/atraksii/img/kopi/3.jpg'
+                ],
+                dayaTarik: "Proses panen dan pengolahan kopi Flores yang terkenal akan cita rasa khasnya.",
+                features: [
+                    {
+                        icon: "fa-shopping-basket",
+                        title: "Produk Lokal",
+                        description: "Beli kopi dan aren organik sebagai oleh-oleh."
+                    },
+                    {
+                        icon: "fa-tshirt",
+                        title: "Pengalaman Interaktif",
+                        description: "Ikut serta dalam proses panen dan pengolahan kopi lokal"
+                    },
+                    {
+                        icon: "fa-utensils",
+                        title: "Mencicipi",
+                        description: "Nikmati kopi yang harum dan gula aren segar."
+                    }
+                ]
+            },
+            {
+                title: 'Membuat Tuak',
+                location: 'Desa Wisata Golo Loni',
+                heroTitle: 'Membuat Tuak',
+                description: 'Lihat langsung proses pembuatan tuak, minuman tradisional dari fermentasi nira aren, dan cicipi rasanya yang khas.',
+                image: 'atraks/atraksii/img/tuak/1.jpeg',
+                category: 'Wisata Budaya',
+                descTitle: 'MEMBUAT TUAK',
+                descPrice: 'RP Belum',
+                descDescription: 'Lihat langsung proses pembuatan tuak, minuman tradisional dari fermentasi nira aren, dan cicipi rasanya yang khas.',
+                descAccommodation: 'Belum',
+                bottomImages: [
+                    'atraks/atraksii/img/tuak/1.jpeg',
+                    'atraks/atraksii/img/tuak/1.jpeg',
+                    'atraks/atraksii/img/tuak/1.jpeg'
+                ],
+                dayaTarik: "Proses pembuatan tuak autentik menggunakan metode tradisional Manggarai dari nira aren lokal.",
+                features: [
+                    {
+                        icon: "fa-mountain",
+                        title: "Lokasi Alam Asri",
+                        description: "Workshop di tengah kebun aren pegunungan Golo Loni dengan udara segar dan pemandangan Trans Flores."
+                    },
+                    {
+                        icon: "fa-hard-hat",
+                        title: "Proses Tradisional",
+                        description: "Ikuti langkah fermentasi aman dengan bimbingan petani berpengalaman."
+                    },
+                    {
+                        icon: "fa-user-shield",
+                        title: "Budaya",
+                        description: "Pengalaman edukatif adat lokal."
+                    }
+                ]
+            },
+            {
+                title: 'Tarian Caci',
+                location: 'Desa Wisata Golo Loni',
+                heroTitle: 'Tarian Caci',
+                description: 'Saksikan tarian perang tradisional yang penuh energi dan makna budaya, sebuah pertunjukan seni yang memukau.',
+                image: 'atraks/atraksii/img/caci/1.png',
+                category: 'Wisata Budaya',
+                descTitle: 'TARIAN CACI',
+                descPrice: 'RP 20.000,00',
+                descDescription: 'Saksikan tarian perang tradisional yang penuh energi dan makna budaya, sebuah pertunjukan seni yang memukau.',
+                descAccommodation: 'Kamar mandi umum, kesenian dan budaya, selfie area',
+                bottomImages: [
+                    'atraks/atraksii/img/caci/1.png',
+                    'atraks/atraksii/img/caci/2.png',
+                    'atraks/atraksii/img/caci/3.png'
+                ],
+                dayaTarik: "Tari Caci adalah tarian tradisional Manggarai yang menampilkan adu ketangkasan antara dua laki-laki dalam mencambuk dan menangkis cambukan lawan, melambangkan keberanian dan kekeluargaan. Tarian ini diiringi upacara adat, seperti penerimaan tamu dengan ayam putih dan sesajian untuk leluhur, serta dimainkan pada acara penting seperti upacara syukuran (penti) atau pernikahan adat (wagal).",
+                features: [
+                    {
+                        icon: "fa-shopping-basket",
+                        title: "Suvenir Budaya",
+                        description: "Beli replika pernak-pernik Tari Caci seperti selendang songket atau miniatur alat pemukul dan perisai sebagai kenang-kenangan."
+                    },
+                    {
+                        icon: "fa-tshirt",
+                        title: "Pakaian Adat",
+                        description: "Saksikan penari mengenakan songket Manggarai dan pernak-pernik tradisional."
+                    },
+                    {
+                        icon: "fa-utensils",
+                        title: "Kuliner Lokal",
+                        description: "Nikmati hidangan tradisional yang disajikan oleh warga desa selama acara Tari Caci."
+                    }
+                ]
+            },
+            {
+                title: 'Menganyam Tikar',
+                location: 'Desa Wisata Golo Loni',
+                heroTitle: 'Menganyam <br> Tikar',
+                description: 'Belajar seni menganyam tikar dari para pengrajin lokal. Bawa pulang hasil karya Anda sebagai suvenir otentik.',
+                image: 'atraks/atraksii/img/tikar/3.jpg',
+                category: 'Wisata Budaya',
+                descTitle: 'MENGANYAM TIKAR',
+                descPrice: 'RP 20.000,00',
+                descDescription: 'Belajar seni menganyam tikar dari para pengrajin lokal. Bawa pulang hasil karya Anda sebagai suvenir otentik.',
+                descAccommodation: 'Kamar mandi bersama',
+                bottomImages: [
+                    'atraks/atraksii/img/tikar/1.jpg',
+                    'atraks/atraksii/img/tikar/2.jpg',
+                    'atraks/atraksii/img/tikar/3.jpg'
+                ],
+
+                dayaTarik: "Menganyam tikar adalah tradisi turun-temurun yang dilakukan oleh wanita di Desa Golo Loni, mencerminkan keterampilan dan warisan budaya Manggarai. Pengunjung dapat belajar langsung dari pengrajin lokal, merasakan proses kreatif, dan membawa pulang pengalaman budaya yang autentik.",
+                features: [
+                    {
+                        icon: "fa-mountain",
+                        title: "Pengalaman Budaya",
+                        description: "Ikuti workshop menganyam tikar bersama wanita lokal di Desa Golo Loni, belajar teknik tradisional di suasana pedesaan yang asri."
+                    },
+                    {
+                        icon: "fa-hard-hat",
+                        title: "Keterampilan Praktis",
+                        description: "Dapatkan bimbingan langsung dari pengrajin berpengalaman untuk membuat tikar dari bahan alami seperti daun pandan atau lontar."
+                    },
+                    {
+                        icon: "fa-user-shield",
+                        title: "Warisan Lokal",
+                        description: "Pahami nilai budaya dan sejarah menganyam tikar sebagai tradisi turun-temurun yang memperkuat identitas masyarakat Manggarai."
+                    }
+                ]
+            }
+        ];
+
+        // Initialize variables
+        let currentPackageIndex = 0;
+        let currentImageIndex = 0;
+        let carouselPosition = 0;
+        const itemsPerView = 4;
+        const carouselTrack = document.getElementById('carouselTrack');
+        const carouselIndicators = document.getElementById('carouselIndicators');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const heroBackground = document.getElementById('heroBackground');
+        const heroTitle = document.querySelector('.hero-title');
+        const locationText = document.querySelector('.location-text');
+        const heroDescription = document.querySelector('.hero-description');
+
+        // Description section elements
+        const descMainImage = document.getElementById('descMainImage');
+        const descTitle = document.getElementById('descTitle');
+        const descPrice = document.getElementById('descPrice');
+        const descDescription = document.getElementById('descDescription');
+        const descAccommodation = document.getElementById('descAccommodation');
+        const bottomImage1 = document.getElementById('bottomImage1');
+        const bottomImage2 = document.getElementById('bottomImage2');
+        const bottomImage3 = document.getElementById('bottomImage3');
+        const imageIndicators = document.getElementById('imageIndicators');
+        const descPrevBtn = document.getElementById('descPrevBtn');
+        const descNextBtn = document.getElementById('descNextBtn');
+
+        // Recommendation section elements
+        const recommendationContent = document.getElementById('recommendationContent');
+        const recommendationFeatures = document.getElementById('recommendationFeatures');
+
+        // Initialize the carousel
+        function initCarousel() {
+            // Clear existing content
+            carouselTrack.innerHTML = '';
+            carouselIndicators.innerHTML = '';
+
+            // Create carousel items and indicators
+            packageContent.forEach((pkg, index) => {
+                // Create carousel item
+                const item = document.createElement('div');
+                item.className = 'carousel-item';
+                if (index === 0) item.classList.add('active');
+
+                const img = document.createElement('img');
+                img.src = pkg.image;
+                img.alt = pkg.title;
+                img.className = 'carousel-image';
+                if (index === 0) img.classList.add('active');
+                img.addEventListener('click', () => selectPackage(index));
+
+                const category = document.createElement('div');
+                category.className = 'carousel-category';
+                category.textContent = pkg.category;
+
+                const title = document.createElement('div');
+                title.className = 'carousel-title';
+                title.textContent = pkg.title;
+
+                item.appendChild(img);
+                item.appendChild(title);
+                item.appendChild(title);
+                carouselTrack.appendChild(item);
+
+                // Create indicator
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator';
+                if (index === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => selectPackage(index));
+                carouselIndicators.appendChild(indicator);
+            });
+
+            // Set initial package
+            updatePackageContent(0);
+        }
+
+        // Update package content based on selected index
+        function updatePackageContent(index) {
+            const pkg = packageContent[index];
+
+            // Update hero section
+            heroBackground.src = pkg.image;
+            locationText.textContent = pkg.location;
+            heroTitle.innerHTML = pkg.heroTitle;
+            heroDescription.textContent = pkg.description;
+
+            // Update description section
+            descMainImage.src = pkg.image;
+            descTitle.textContent = pkg.descTitle;
+            descPrice.textContent = pkg.descPrice;
+            descDescription.textContent = pkg.descDescription;
+            descAccommodation.textContent = pkg.descAccommodation;
+
+            // Update bottom images
+            bottomImage1.style.backgroundImage = `url('${pkg.bottomImages[0]}')`;
+            bottomImage2.style.backgroundImage = `url('${pkg.bottomImages[1]}')`;
+            bottomImage3.style.backgroundImage = `url('${pkg.bottomImages[2]}')`;
+
+            // Reset bottom image selection
+            document.querySelectorAll('.bottom-image').forEach(img => img.classList.remove('active'));
+            bottomImage1.classList.add('active');
+            currentImageIndex = 0;
+
+            // Update image indicators
+            updateImageIndicators(pkg.bottomImages.length);
+
+            // Update recommendation section
+            updateRecommendationSection(pkg);
+
+            // Update active carousel item
+            document.querySelectorAll('.carousel-item').forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add('active');
+                    item.querySelector('.carousel-image').classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                    item.querySelector('.carousel-image').classList.remove('active');
+                }
+            });
+
+            // Update active indicator
+            document.querySelectorAll('.indicator').forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+
+            // Update carousel position
+            updateCarouselPosition(index);
+        }
+
+        // Update image indicators for the description section
+        function updateImageIndicators(count) {
+            imageIndicators.innerHTML = '';
+            for (let i = 0; i < count; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'image-indicator';
+                if (i === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => {
+                    currentImageIndex = i;
+                    descMainImage.src = packageContent[currentPackageIndex].bottomImages[i];
+                    updateImageSelection();
+                });
+                imageIndicators.appendChild(indicator);
+            }
+        }
+
+        // Update image selection in description section
+        function updateImageSelection() {
+            // Update main image
+            descMainImage.src = packageContent[currentPackageIndex].bottomImages[currentImageIndex];
+
+            // Update indicators
+            document.querySelectorAll('.image-indicator').forEach((indicator, i) => {
+                if (i === currentImageIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+
+            // Update bottom images
+            document.querySelectorAll('.bottom-image').forEach((img, i) => {
+                if (i === currentImageIndex) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
+            });
+        }
+
+        // Update recommendation section
+        function updateRecommendationSection(pkg) {
+            // Clear existing content
+            recommendationContent.innerHTML = '';
+            recommendationFeatures.innerHTML = '';
+
+            // Create daya tarik and rekomendasi content
+            const dayaTarik = document.createElement('p');
+            dayaTarik.textContent = pkg.dayaTarik;
+            dayaTarik.style.marginBottom = '1rem';
+
+            const rekomendasi = document.createElement('p');
+            rekomendasi.textContent = pkg.rekomendasi;
+            rekomendasi.style.fontWeight = 'bold';
+
+            recommendationContent.appendChild(dayaTarik);
+            recommendationContent.appendChild(rekomendasi);
+
+            // Create feature items
+            pkg.features.forEach(feature => {
+                const featureItem = document.createElement('div');
+                featureItem.className = 'feature-item';
+
+                const icon = document.createElement('div');
+                icon.className = 'feature-icon';
+                icon.innerHTML = `<i class="fas ${feature.icon}"></i>`;
+
+                const title = document.createElement('h3');
+                title.className = 'feature-title';
+                title.textContent = feature.title;
+
+                const desc = document.createElement('p');
+                desc.className = 'feature-desc';
+                desc.textContent = feature.description;
+
+                featureItem.appendChild(icon);
+                featureItem.appendChild(title);
+                featureItem.appendChild(desc);
+                recommendationFeatures.appendChild(featureItem);
+            });
+        }
+
+        // Select a package
+        function selectPackage(index) {
+            currentPackageIndex = index;
+            updatePackageContent(index);
+        }
+
+        // Update carousel position
+        function updateCarouselPosition(selectedIndex) {
+            const itemHeight = 130 + 16; // 130px height + 16px gap
+            const trackHeight = packageContent.length * itemHeight;
+            const visibleHeight = itemsPerView * itemHeight;
+
+            // Calculate the position to center the selected item
+            let position = selectedIndex * itemHeight - (visibleHeight / 2) + (itemHeight / 2);
+
+            // Ensure we don't scroll past the beginning or end
+            position = Math.max(0, Math.min(position, trackHeight - visibleHeight));
+
+            carouselTrack.style.transform = `translateY(-${position}px)`;
+        }
+
+        // Navigation event listeners
+        prevBtn.addEventListener('click', () => {
+            if (currentPackageIndex > 0) {
+                selectPackage(currentPackageIndex - 1);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPackageIndex < packageContent.length - 1) {
+                selectPackage(currentPackageIndex + 1);
+            }
+        });
+
+        // Description navigation event listeners
+        descPrevBtn.addEventListener('click', () => {
+            if (currentPackageIndex > 0) {
+                selectPackage(currentPackageIndex - 1);
+            }
+        });
+
+        descNextBtn.addEventListener('click', () => {
+            if (currentPackageIndex < packageContent.length - 1) {
+                selectPackage(currentPackageIndex + 1);
+            }
+        });
+
+        // Bottom image click event listeners
+        bottomImage1.addEventListener('click', () => {
+            currentImageIndex = 0;
+            updateImageSelection();
+        });
+
+        bottomImage2.addEventListener('click', () => {
+            currentImageIndex = 1;
+            updateImageSelection();
+        });
+
+        bottomImage3.addEventListener('click', () => {
+            currentImageIndex = 2;
+            updateImageSelection();
+        });
+        // Initialize the carousel on page load
+        document.addEventListener('DOMContentLoaded', initCarousel);
+    </script>
+</body>
+
+</html>
