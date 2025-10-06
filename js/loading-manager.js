@@ -7,7 +7,7 @@ class EnhancedLoadingManager {
         this.statusText = document.querySelector('.loading-status');
 
         // Configuration
-        this.duration = 300; // Reduced to 3 seconds for better UX
+        this.duration = 3000; // Reduced to 3 seconds for better UX
         this.sessionTimeout = 30 * 60 * 1000; // 30 minutes in milliseconds
         this.startTime = null;
         this.animationId = null;
